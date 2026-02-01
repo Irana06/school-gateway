@@ -28,6 +28,7 @@ return new class extends Migration
             $table->foreignUuid('user_id')->constrained('users')->onDelete('cascade');
             $table->string('nip')->unique();
             $table->string('specialization')->nullable();
+            $table->timestamps();
         });
 
         Schema::create('parents', function (Blueprint $table) {
@@ -35,11 +36,13 @@ return new class extends Migration
             $table->foreignUuid('user_id')->constrained('users')->onDelete('cascade');
             $table->string('phone_number')->nullable();
             $table->string('address')->nullable();
+            $table->timestamps();
         });
 
         Schema::create('parent_students', function (Blueprint $table) {
             $table->foreignUuid('parent_id')->constrained('parents')->onDelete('cascade');
             $table->foreignUuid('student_id')->constrained('students')->onDelete('cascade');
+            $table->timestamps();
 
             $table->primary(['parent_id', 'student_id']);
         });
