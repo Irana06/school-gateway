@@ -12,3 +12,31 @@
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 @fluxAppearance
+
+<!-- Google Fonts: Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Lucide Icons CDN -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Custom Styles for Neomorphism -->
+<style>
+    /* Define color variables for easy management */
+    :root {
+        --bg-color: #e0e5ec;
+        --light-shadow: #ffffff;
+        --dark-shadow: #a3b1c6;
+        --text-color: #5a677d;
+        --accent-color-start: #8e9ef2;
+        --accent-color-end: #667eea;
+    }
+
+    /* Set base styles */
+    body {
+        background-color: var(--bg-color);
+        font-family: 'Poppins', sans-serif;
+        color: var(--text-color);
+    }
+</style>

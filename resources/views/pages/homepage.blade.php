@@ -4,65 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AuraUI - Neomorphic Landing Page</title>
+    <title></title>
 
-    <!-- Custom Styles for Neomorphism -->
-    <style>
-        /* Define color variables for easy management */
-        :root {
-            --bg-color: #e0e5ec;
-            --light-shadow: #ffffff;
-            --dark-shadow: #a3b1c6;
-            --text-color: #5a677d;
-            --accent-color-start: #8e9ef2;
-            --accent-color-end: #667eea;
-        }
-
-        /* Set base styles */
-        body {
-            background-color: var(--bg-color);
-            font-family: 'Poppins', sans-serif;
-            color: var(--text-color);
-        }
-
-        /* Neomorphism Classes (using Tailwind's @layer for organization) */
-        
-    </style>
 </head>
 <body class="antialiased">
-
-    <!-- =========== Header =========== -->
-    <header class="sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center backdrop-blur-sm bg-white/30 rounded-b-xl neumorphic-flat">
-            <a href="#" class="text-2xl font-bold text-gradient">AuraUI</a>
-            
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#features" class="hover:text-gradient font-medium transition-colors">Features</a>
-                <a href="#testimonials" class="hover:text-gradient font-medium transition-colors">Testimonials</a>
-                <a href="#contact" class="hover:text-gradient font-medium transition-colors">Contact</a>
-            </div>
-            
-            <a href="#contact" class="hidden md:block px-6 py-2 rounded-full font-semibold neumorphic-flat hover:neumorphic-pressed">Get Started</a>
-
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden p-2 rounded-full neumorphic-flat hover:neumorphic-pressed">
-                <i data-lucide="menu"></i>
-            </button>
-        </nav>
-        
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden container mx-auto px-6 pb-4">
-             <div class="mt-4 p-4 neumorphic-flat rounded-xl">
-                <a href="#features" class="block py-2 text-center hover:text-gradient font-medium">Features</a>
-                <a href="#testimonials" class="block py-2 text-center hover:text-gradient font-medium">Testimonials</a>
-                <a href="#contact" class="block py-2 text-center hover:text-gradient font-medium">Contact</a>
-                <a href="#contact" class="block mt-4 w-full text-center py-3 rounded-full font-semibold neumorphic-flat hover:neumorphic-pressed">Get Started</a>
-             </div>
-        </div>
-    </header>
-
-    <main>
+{{--    <main>
         <!-- =========== Hero Section =========== -->
         <section class="min-h-[90vh] flex items-center">
             <div class="container mx-auto px-6 text-center">
@@ -87,7 +33,7 @@
                     <p class="mt-2 text-lg">The next generation of user interface design is here.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    
+
                     <!-- Feature Card 1 -->
                     <div class="p-8 text-center rounded-2xl neumorphic-flat hover:-translate-y-2">
                         <div class="inline-flex p-5 rounded-full neumorphic-inset">
@@ -126,7 +72,7 @@
                     <p class="mt-2 text-lg">Don't just take our word for it. Here's what others are saying.</p>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    
+
                     <!-- Testimonial Card 1 -->
                     <div class="p-8 rounded-2xl neumorphic-flat">
                         <p class="italic text-lg">"This is a game-changer. The neomorphic design adds a level of sophistication I haven't seen before. My users love the new feel of my app."</p>
@@ -200,7 +146,7 @@
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-    </script>
+    </script> --}}
 
 </body>
 </html>
